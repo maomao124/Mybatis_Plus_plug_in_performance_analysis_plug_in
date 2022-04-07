@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo message="*******************install-or-package*******************"/>
+  <mkdir dir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件/target/classes"/>
+  <copy todir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/classes/Mybatis_Plus插件之性能分析插件.jar" tofile="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/Mybatis_Plus插件之性能分析插件_hide.jar"/>
+  <copy todir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/classes" overwrite="true">
+    <fileset dir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <move file="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/classes/Mybatis_Plus插件之性能分析插件.jar" tofile="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/Mybatis_Plus插件之性能分析插件_args.jar"/>
+  <move file="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/classes/Mybatis_Plus插件之性能分析插件_hide.jar" tofile="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/Mybatis_Plus插件之性能分析插件_args_save.jar"/>
+  <copy todir="H:/jar包/" overwrite="true">
+    <fileset dir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target" erroronmissingdir="false">
+      <include name="*.jar"/>
+    </fileset>
+  </copy>
+  <copy todir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/" overwrite="true">
+    <fileset dir="H:/jar包/" erroronmissingdir="false">
+      <include name="*.bat"/>
+    </fileset>
+  </copy>
+  <copy todir="H:\程序\大三下期\Mybatis_Plus插件之性能分析插件\target/" overwrite="true">
+    <fileset dir="H:/jar包/" erroronmissingdir="false">
+      <include name="jar启动器.7z"/>
+    </fileset>
+  </copy>
+</target>
+</project>
